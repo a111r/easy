@@ -5,7 +5,7 @@ void itc_name() {
 
 void itc_fio() {
     itc_name();
-    cout << "Olegovich" << endl << "Naydenko" << endl;
+    cout << "Rustemovich" << endl << "Sitdikov" << endl;
 }
 
 int itc_abs(int num) {
