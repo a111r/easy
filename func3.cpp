@@ -14,14 +14,14 @@ int itc_sqrt(int num)
 
 int itc_skv(int a) 
 {
-    if(num <= 0)
+    if(a <= 0)
         return -1;
     return a * a;
 }
 
 int itc_spr(int a, int b)
 {
-    if (num <= 0)
+    if (a <= 0 || b <= 0)
         return -1;
     return itc_abs(a * b);
 }
