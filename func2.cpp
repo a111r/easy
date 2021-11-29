@@ -23,11 +23,11 @@ int itc_min(int a, int b)
 		return b;
 }
 
-double itc_fmax(double num, double num1) {
-if (num > num1) 
-	return num;
-else 
-	return num1;
+double itc_fmax(double a, double b) {
+	if (a > b) 
+		return a;
+	else 
+		return b;
 }
 
 double itc_fmin(double a, double b) {
