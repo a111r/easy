@@ -1,16 +1,20 @@
 #include "easy.h"
-int itc_sqrt(int num) {
+int itc_sqrt(int num)
+{
     int a;
-    for (int i = 0; i < 10000; i++) {
-        if (i * i == num) {
+    for (int i = 0; i < 10000; i++) 
+    {
+        if (i * i == num)
+        {
             return i;
         }
     }
     return -1;
 }
 
-int itc_skv(int s) {
-    return s * s;
+int itc_skv(int a) 
+{
+    return a * a;
 }
 
 int itc_spr(int a, int b)
@@ -18,12 +22,12 @@ int itc_spr(int a, int b)
         return itc_abs(a * b);
 }
 
-double itc_str(double f_s, double s_s, double th_s) {
-    if (f_s + s_s <= th_s or f_s + th_s <= s_s or s_s + th_s <= f_s) {
+double itc_str(double a, double b, double c) {
+    if (a + b <= c or a + c <= b or b + c <= a) {
         return -1;
     }
-    double p = (f_s + s_s + th_s) / 2;
-    return itc_sqrt(p * (p - f_s) * (p - s_s) * (p - th_s));
+    double p = (a + b + c) / 2;
+    return itc_sqrt(p * (p - a) * (p - b) * (p - c));
 }
 
 double itc_scir(int num) {
