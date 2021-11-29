@@ -14,12 +14,15 @@ int itc_sqrt(int num)
 
 int itc_skv(int a) 
 {
+    
     return a * a;
 }
 
 int itc_spr(int a, int b)
 {
-        return itc_abs(a * b);
+    if (num <= 0)
+        return 0;
+    return itc_abs(a * b);
 }
 
 double itc_str(double a, double b, double c) {
@@ -30,6 +33,9 @@ double itc_str(double a, double b, double c) {
     return itc_sqrt(p * (p - a) * (p - b) * (p - c));
 }
 
-double itc_scir(int num) {
+double itc_scir(int num)
+{
+    if (num <= 0)
+        return 0;
     return num * num * 3.14;
 }
